@@ -8,8 +8,8 @@
 
 Bench.delete_all
 # 37.786337, -122.443078
-Bench.create!(description: "Some random place", lng:37.786337 , lat:-122.443078)
+Bench.create!(description: "Some random place", lat:37.786337 , lng:-122.443078)
 # 37.785879, -122.446458
-Bench.create!(description: "Fire Station", lng:37.785879 , lat:-122.446458)
+Bench.create!(description: "Fire Station", lat:37.785879 , lng:-122.446458)
 # 37.783370, -122.447723
-Bench.create!(description: "Trader Joe", lng:37.783370 , lat:-122.447723)
+Bench.create!(description: "Trader Joe", lat:37.783370 , lng:-122.447723)
