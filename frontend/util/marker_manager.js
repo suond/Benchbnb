@@ -24,10 +24,6 @@ export default class MarkerManager{
                 this.removeMarker(this.markers[markerKey]);
             }
         });
-//         Object.keys(this.markers)
-//       .filter(benchId => !benchesObj[benchId])
-//       .forEach((benchId) => this.removeMarker(this.markers[benchId]))
-//   }
 
     }
 
