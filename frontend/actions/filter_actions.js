@@ -1,4 +1,6 @@
 export const UPDATE_BOUNDS = "UPDATE_BOUNDS"
+export const UPDATE_FILTER = "UPDATE_FILTER"
+
 
 export const updateBounds = (bounds) => {
     return {
@@ -8,7 +10,7 @@ export const updateBounds = (bounds) => {
 }
 
 export const changeFilter = (filter, value) => {
-    type: "UPDATE_FILTER",
+    type: UPDATE_FILTER,
     filter,
     value
 }

@@ -9,7 +9,6 @@ class BenchIndex extends React.Component{
 
     render(){
         const benches = this.props.benches;
-
         return (
             <div>
                 <ul>
@@ -18,7 +17,6 @@ class BenchIndex extends React.Component{
                             <BenchIndexItem  
                                 key={bench.id}
                                 bench={bench}
-
                             />
                             )
                         )
@@ -28,8 +26,12 @@ class BenchIndex extends React.Component{
         );
     }
 
-    componentDidMount() {
-        this.props.fetchBenches()
+    
+
+    componentDidUpdate(prevProps){
+        if (prevProps.bounds !== this.props.bounds) {
+            this.props.fetchBenches({bounds: this.props.bounds})    
+        }
     }
 }
 
